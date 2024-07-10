@@ -1,5 +1,5 @@
 <div align=center>
-<img width="424" alt="스크린샷 2024-07-10 오전 11 56 23" src="https://github.com/rla-wjdqls/myshop/assets/152236710/94062653-f5e9-44de-96ab-176a3fcba68c">
+<img width="500" alt="스크린샷 2024-07-10 오전 11 56 23" src="https://github.com/rla-wjdqls/myshop/assets/152236710/94062653-f5e9-44de-96ab-176a3fcba68c">
   <h2></h2>
   http://shy02261.cafe24.com/index.jsp
   <br>
@@ -33,11 +33,12 @@ Jpa
 
 ## ⚙️ 화면구성
 
-<img width="812" alt="스크린샷 2024-07-10 오전 11 54 33" src="https://github.com/rla-wjdqls/myshop/assets/152236710/cc080d86-8dc1-41d4-9b1f-adb96d43a32c">
-<img width="861" alt="스크린샷 2024-07-10 오후 12 00 19" src="https://github.com/rla-wjdqls/myshop/assets/152236710/70faca08-4c0c-4d54-ae98-0a96c89518c6">
-<img width="857" alt="스크린샷 2024-07-10 오전 11 59 42" src="https://github.com/rla-wjdqls/myshop/assets/152236
-<img width="605" alt="스크린샷 2024-07-09 오후 6 21 53" src="https://github.com/rla-wjdqls/myshop/assets/152236710/9aae7fd3-8aff-4cc6-ae1a-fc22b42ac699">
-710/0ceec1b4-8814-4790-9c4d-a2261fb850f4">
+<img width="800" alt="ms 검색" src="https://github.com/rla-wjdqls/myshop/assets/152236710/03b2d3cf-a43d-4840-bf33-7186cd109d3e">
+<img width="800" alt="ms 댓글" src="https://github.com/rla-wjdqls/myshop/assets/152236710/707dacc3-7c88-4516-b44c-a6a8c65e0019">
+<img width="800" alt="ms 상품등록" src="https://github.com/rla-wjdqls/myshop/assets/152236710/70b75bc8-0a17-4e68-ab17-584537518ed2">
+<img width="800" alt="ms 장바구니" src="https://github.com/rla-wjdqls/myshop/assets/152236710/93ebb94c-cf0f-4c81-9b19-6b4a56f14773">
+<img width="800" alt="ms 배송지" src="https://github.com/rla-wjdqls/myshop/assets/152236710/dfd315d3-b3e7-46d5-9993-fe98949db558">
+<img width="800" alt="ms 주문완료" src="https://github.com/rla-wjdqls/myshop/assets/152236710/6e39b3c1-5afb-425b-99aa-4f73d86627ec">
 
 ## ⚙️ 주요기능 
 
