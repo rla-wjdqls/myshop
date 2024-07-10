@@ -1,5 +1,5 @@
 <div align=center>
-<img width="417" alt="myweb index" src="https://github.com/rla-wjdqls/myweb/assets/152236710/67ed6463-346e-4637-95a2-31163afd6104">
+<img width="424" alt="스크린샷 2024-07-10 오전 11 56 23" src="https://github.com/rla-wjdqls/myshop/assets/152236710/94062653-f5e9-44de-96ab-176a3fcba68c">
   <h2></h2>
   http://shy02261.cafe24.com/index.jsp
   <br>
@@ -32,7 +32,7 @@ Jpa
 
 
 ## ⚙️ 화면구성
-<img width="424" alt="스크린샷 2024-07-10 오전 11 56 23" src="https://github.com/rla-wjdqls/myshop/assets/152236710/94062653-f5e9-44de-96ab-176a3fcba68c">
+
 <img width="812" alt="스크린샷 2024-07-10 오전 11 54 33" src="https://github.com/rla-wjdqls/myshop/assets/152236710/cc080d86-8dc1-41d4-9b1f-adb96d43a32c">
 <img width="861" alt="스크린샷 2024-07-10 오후 12 00 19" src="https://github.com/rla-wjdqls/myshop/assets/152236710/70faca08-4c0c-4d54-ae98-0a96c89518c6">
 <img width="857" alt="스크린샷 2024-07-10 오전 11 59 42" src="https://github.com/rla-wjdqls/myshop/assets/152236
