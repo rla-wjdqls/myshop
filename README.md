@@ -28,16 +28,18 @@
 ## ⚙️ 주요기능 
 
 ### [상품]
+<div align=center>
 <br><img width="500" height="450" alt="ms 상품등록" src="https://github.com/rla-wjdqls/myshop/assets/152236710/683ebb0f-f8dc-48a0-883a-1f1c07b37de7">
 <img width="500" height="450" alt="ms 검색" src="https://github.com/rla-wjdqls/myshop/assets/152236710/cfbe592c-52d2-4b75-9834-49d4b408465e"><br>
+</div>
 
 - 상품을 등록 할 수 있습니다  <br>
 - 원하는 상품 검색 가능합니다  <br>
 
 <div align=center>
   <img width="700" alt="ms 장바구니" src="https://github.com/rla-wjdqls/myshop/assets/152236710/9c37fce7-6ce6-404e-9f58-70a21d1fdbe6">
-  <img width="400" height="450" alt="ms 배송지" src="https://github.com/rla-wjdqls/myshop/assets/152236710/ed5270dd-38ef-402d-8c32-758bd11dabe7">
-  <img width="400" height="450" alt="ms 주문완료" src="https://github.com/rla-wjdqls/myshop/assets/152236710/a485d869-e19b-4824-9ee9-704b2f01477b"><br>
+  <img width="500" height="450" alt="ms 배송지" src="https://github.com/rla-wjdqls/myshop/assets/152236710/ed5270dd-38ef-402d-8c32-758bd11dabe7">
+  <img width="500" height="450" alt="ms 주문완료" src="https://github.com/rla-wjdqls/myshop/assets/152236710/a485d869-e19b-4824-9ee9-704b2f01477b"><br>
 </div>
 
 - 상품을 장바구니에 담고 배송지를 입력하여 주문 할 수 있습니다  <br>
