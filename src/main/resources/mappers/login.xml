@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--mapper에서 사용하는 커스텀태그가 정의되어 있는 곳 임포트 시킴-->
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<!--login.xml-->
+ <mapper namespace="login">
+  
+  <select id="check" parameterType="kr.co.itwill.login.LoginDTO" resultType="String">
+    SELECT mlevel
+    FROM login
+    WHERE id = #{id} AND passwd = #{passwd}
+    AND mlevel IN ('A1','B1','C1','D1')
+</select>
+
+<insert id="insert" parameterType="kr.co.itwill.login.LoginDTO">
+    INSERT INTO login(id, passwd, wname, tel, email, zipcode, address1, address2, mlevel, mdate)
+    VALUES(#{id}, #{passwd}, #{wname}, #{tel}, #{email}, #{zipcode}, #{address1}, #{address2}, 'D1', CURRENT_TIMESTAMP)
+</insert>
+
+<select id="idDuplicate" parameterType="String" resultType="String">
+    SELECT COUNT(*)
+    FROM login
+    WHERE id = #{id}
+</select>
+
+<select id="emailDuplicate" parameterType="String" resultType="String">
+    SELECT COUNT(*)
+    FROM login
+    WHERE email = #{email}
+</select>
+  
+  
+  <!--
+  <select id="check" parameterType="kr.co.itwill.login.LoginDTO" resultType="String">
+  	SELECT mlevel
+  	FROM login
+  	WHERE id = #{id} AND passwd = #{passwd}
+  	AND mlevel IN ('A1','B1','C1','D1')
+  </select>
+  
+  
+  <insert id="insert" parameterType="kr.co.itwill.login.LoginDTO">
+  	INSERT INTO login(id, passwd, wname, tel, email, zipcode, address1, address2, mlevel, mdate)
+  	VALUES(#{id}, #{passwd}, #{wname}, #{tel}, #{email}, #{zipcode}, #{address1}, #{address2}, 'D1', sysdate)
+  </insert>
+
+  
+  <select id="idDuplicate" parameterType="String" resultType="String">
+  	SELECT COUNT(*)
+  	FROM login
+  	WHERE id = #{id}
+  </select>
+
+  <select id="emailDuplicate" parameterType="String" resultType="String">
+  	SELECT COUNT(*)
+  	FROM login
+  	WHERE email = #{email}
+  </select>
+  -->
+  
+  
+ </mapper> 
+ 	
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,26 @@
+-- cart_sql.txt
+
+-- 장바구니 테이블
+create table cart (
+    cartno       number      primary key     --장바구니 번호
+   ,product_code number      not null        --상품코드
+   ,price        number      not null        --상품가격
+   ,qty          number      default 0       --상품수량
+   ,id           varchar(15) not null        --아이디
+   ,regdate      date        default sysdate --작성일
+);
+
+-- 장바구니 시퀀스 생성
+create sequence cart_seq;
+
+
+-- 장바구니 삭제
+-- 내 것만 삭제하기 위해 회원제 운영시 세션 아이디 필요하다
+DELETE FROM cart WHERE cartno=? AND id=?
+
+
+-- 장바구니+상품 조인
+select id, cartno, cart.product_code, product_name, filename, product.price, cart.qty
+from cart join product
+on cart.product_code = product.product_code
+

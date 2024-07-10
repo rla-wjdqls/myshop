@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--mapper에서 사용하는 커스텀태그가 정의되어 있는 곳 임포트 시킴-->
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <!--comment.xml-->
+ <mapper namespace="comment">
+ 
+<insert id="insert" parameterType="kr.co.itwill.comment.CommentDTO">
+    INSERT INTO pcomment(product_code, content, wname)
+    VALUES(#{product_code}, #{content}, #{wname})
+</insert>
+
+<select id="list" parameterType="int" resultType="kr.co.itwill.comment.CommentDTO">
+    SELECT cno, product_code, content, wname, regdate
+    FROM pcomment
+    WHERE product_code = #{product_code}
+    ORDER BY regdate
+</select>
+
+<update id="update" parameterType="kr.co.itwill.comment.CommentDTO">
+    UPDATE pcomment
+    SET content = #{content}
+    WHERE cno = #{cno}
+</update>
+
+<delete id="delete" parameterType="int">
+    DELETE FROM pcomment
+    WHERE cno = #{cno}
+</delete>
+
+
+ 
+ 	<!--
+ 	
+ 	insert : resultType 지정하지 않아도 Integer 타입 반환된다  
+	<insert id="insert" parameterType="kr.co.itwill.comment.CommentDTO">
+		INSERT INTO pcomment(cno, product_code, content, wname)
+		VALUES(pcomment_seq.nextval, #{product_code}, #{content}, #{wname})
+	</insert>
+
+	<select id="list" parameterType="int" resultType="kr.co.itwill.comment.CommentDTO">
+		SELECT cno, product_code, content, wname ,regdate  
+		FROM pcomment
+		WHERE product_code = #{product_code}
+		ORDER BY regdate
+	</select>
+
+
+	<update id="update" parameterType="kr.co.itwill.comment.CommentDTO">
+		UPDATE pcomment	
+		SET content = #{content} 
+		WHERE cno = #{cno}
+	</update>
+
+ 	<delete id="delete" parameterType="int">
+ 		DELETE FROM pcomment
+ 		where cno = #{cno}
+ 	</delete>
+ 	-->
+ 	
+ </mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

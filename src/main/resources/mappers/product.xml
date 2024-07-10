@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--mapper에서 사용하는 커스텀태그가 정의되어 있는 곳 임포트 시킴-->
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <!--product.xml-->
+ <mapper namespace="product">
+ 
+ <insert id="insert" parameterType="java.util.Map">
+    INSERT INTO product(product_name, description, price, filename, filesize)
+    VALUES(#{product_name}, #{description}, #{price}, #{filename}, #{filesize})
+</insert>
+
+<select id="list" resultType="java.util.Map">
+    SELECT product_code, product_name, description, price, filename, filesize
+    FROM product
+    ORDER BY product_name
+</select>
+
+<select id="search" resultType="java.util.Map" parameterType="String">
+    SELECT product_code, product_name, description, price, filename, filesize
+    FROM product
+    WHERE product_name LIKE CONCAT('%', #{keyword}, '%')
+    ORDER BY product_name
+</select>
+
+<select id="detail" resultType="java.util.Map" parameterType="int">
+    SELECT product_code, product_name, description, price, filename, filesize
+    FROM product
+    WHERE product_code = #{product_code}
+</select>
+
+<select id="filename" resultType="String" parameterType="int">
+    SELECT filename
+    FROM product
+    WHERE product_code = #{product_code}
+</select>
+
+<delete id="delete" parameterType="int">
+    DELETE FROM product
+    WHERE product_code = #{product_code}
+</delete>
+
+<update id="update" parameterType="java.util.Map">
+    UPDATE product
+    SET product_name = #{product_name},
+        price = #{price},
+        description = #{description},
+        filename = #{filename},
+        filesize = #{filesize}
+    WHERE product_code = #{product_code}
+</update>
+ 
+ 
+ <!--
+ 	<insert id="insert" parameterType="java.util.Map">
+ 		INSERT INTO product(product_code, product_name, description, price, filename, filesize)
+ 		VALUES(product_seq.nextval, #{product_name},#{description},#{price},#{filename},#{filesize})
+ 	</insert>
+ 	
+ 	<select id="list" resultType="java.util.Map">
+ 		SELECT product_code, product_name, description, price, filename, filesize
+ 		FROM product
+ 		ORDER BY product_name
+ 	</select>
+ 	
+ 	<select id="search" resultType="java.util.Map" parameterType="String">
+ 		SELECT product_code, product_name, description, price, filename, filesize
+ 		FROM product
+ 		WHERE product_name LIKE #{keyword}
+ 		ORDER BY product_n ame
+ 	</select>
+ 	
+ 	 <select id="detail" resultType="java.util.Map" parameterType="int">
+ 		SELECT product_code, product_name, description, price, filename, filesize
+ 		FROM product
+ 		WHERE product_code = #{product_code}
+ 	</select>
+ 	
+ 	 
+  	<select id="filename" resultType="String" parameterType="int">
+ 	    SELECT filename
+ 		FROM product
+ 		WHERE product_code = #{product_code}
+ 	</select>
+ 	
+ 	<delete id="delete" parameterType="int">
+ 		DELETE FROM product
+ 		WHERE product_code = #{product_code}
+ 	</delete>
+ 
+ 	
+  	<update id="update" parameterType="java.util.Map">
+ 	   UPDATE product
+ 	   SET product_name = #{product_name}
+ 		   ,price = #{price}
+ 		   ,description = #{description}
+ 		   ,filename = #{filename}
+ 		   ,filesize = #{filesize}
+ 	   WHERE product_code = #{product_code}
+ 	</update>
+-->
+ 	
+ </mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

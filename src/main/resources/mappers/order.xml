@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--mapper에서 사용하는 커스텀태그가 정의되어 있는 곳 임포트 시킴-->
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<!--order.xml-->
+ <mapper namespace="order">
+  
+<select id="orderno" parameterType="String" resultType="String">
+    SELECT IFNULL(MAX(orderno), 1)
+    FROM orderlist
+    WHERE orderno LIKE CONCAT(#{date}, '%')
+</select>
+
+<select id="total" parameterType="String" resultType="int">
+    SELECT SUM(price * qty)
+    FROM cart
+    WHERE id = #{s_id}
+</select>
+
+<!-- 배송 상태는 'I'로 디폴트 -->
+<insert id="orderlistInsert" parameterType="kr.co.itwill.order.OrderDTO">
+    INSERT INTO orderlist(orderno, id, totalamount, payment, deliverynm, deliveryaddr, ordercheck) 
+    VALUES(#{orderno}, #{id}, #{totalamount}, #{payment}, #{deliverynm}, #{deliveryaddr}, 'I')
+</insert>
+
+<insert id="orderdetailInsert" parameterType="java.util.HashMap">
+    INSERT INTO orderdetail(orderno, product_code, qty, price)
+    SELECT #{orderno}, product_code, qty, price
+    FROM cart
+    WHERE id = #{s_id}
+</insert>
+
+<delete id="cartdelete" parameterType="String">
+    DELETE FROM cart
+    WHERE id = #{s_id}
+</delete>
+
+  
+  
+  <!--
+	<select id="orderno" parameterType="String" resultType="String">
+		SELECT NVL(MAX(orderno), 1)
+		FROM orderlist
+		WHERE orderno LIKE #{date} || '%'
+	</select>
+  
+  	<select id="total" parameterType="String" resultType="int">
+  		SELECT SUM(price*qty)
+		FROM cart
+		WHERE id = #{s_id}
+  	</select>
+  
+  	배송 상태는 'I'로 디폴트
+  	<insert id="orderlistInsert" parameterType="kr.co.itwill.order.OrderDTO">
+  		INSERT INTO orderlist(orderno, id, totalamount, payment, deliverynm, deliveryaddr, ordercheck) 
+  		VALUES(#{orderno}, #{id}, #{totalamount}, #{payment},#{deliverynm},#{deliveryaddr}, 'I')
+  	</insert>
+  	
+  	
+  	<insert id="orderdetailInsert" parameterType="java.util.HashMap">
+  	   INSERT INTO orderdetail(ono, orderno, product_code, qty, price)
+	  		 SELECT orderdetail_seq.nextval, #{orderno}, product_code, qty, price
+	  		 FROM cart
+	  		 WHERE id = #{s_id}
+  	</insert>
+  	
+  
+  	<delete id="cartdelete" parameterType="String">
+  		DELETE FROM cart
+  		WHERE id = #{s_id}
+  	</delete>
+  -->
+  
+ </mapper> 
+ 	
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
