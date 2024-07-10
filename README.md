@@ -12,18 +12,17 @@
 </div>
 
 ## ✨ 프론트엔드 기술 스택 
-  <br>
 <img width="454" alt="스크린샷 2024-07-10 오전 11 33 49" src="https://github.com/rla-wjdqls/myshop/assets/152236710/bd9b1fc4-e9ff-4737-af38-b75a82ffc4bb">
 
 
 ## ⚡️ 백엔드 기술 스택 
-<br><img width="592" alt="myshop 백엔드" src="https://github.com/rla-wjdqls/myshop/assets/152236710/d379492b-8b48-4104-a1c0-6e738e762b25">
+<img width="592" alt="myshop 백엔드" src="https://github.com/rla-wjdqls/myshop/assets/152236710/d379492b-8b48-4104-a1c0-6e738e762b25">
 
 ## ⚡️ 서버
-<br><img width="165" alt="스크린샷 2024-07-10 오전 11 45 22" src="https://github.com/rla-wjdqls/myshop/assets/152236710/63484848-6502-4702-98e9-c967bb232bff">
+<img width="165" alt="스크린샷 2024-07-10 오전 11 45 22" src="https://github.com/rla-wjdqls/myshop/assets/152236710/63484848-6502-4702-98e9-c967bb232bff">
 
 ## ⚡️ 데이터베이스
-<br><img width="169" alt="스크린샷 2024-07-10 오전 11 39 11" src="https://github.com/rla-wjdqls/myshop/assets/152236710/be990cf9-7f97-4cd4-aec6-7e10cf2ff4d5">
+<img width="169" alt="스크린샷 2024-07-10 오전 11 39 11" src="https://github.com/rla-wjdqls/myshop/assets/152236710/be990cf9-7f97-4cd4-aec6-7e10cf2ff4d5">
 
 
 ## ⚙️ 주요기능 
