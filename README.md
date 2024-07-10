@@ -19,10 +19,10 @@ Jpa
 
 ## ✨ 프론트엔드 기술 스택 
 
-<img width="319" alt="스크린샷 2024-07-10 오전 11 30 35" src="https://github.com/rla-wjdqls/myweb/assets/152236710/15abe99a-c319-465b-9b12-c07433c411c7">
-<img width="165" alt="스크린샷 2024-07-10 오전 11 45 22" src="https://github.com/rla-wjdqls/myweb/assets/152236710/0299a3a1-f010-4a26-880e-62734c37aed3">
-<img width="164" alt="스크린샷 2024-07-10 오전 11 39 58" src="https://github.com/rla-wjdqls/myweb/assets/152236710/f834ca2b-388f-4ace-91d8-eac692f00bf8">
-<img width="454" alt="스크린샷 2024-07-10 오전 11 33 49" src="https://github.com/rla-wjdqls/myweb/assets/152236710/4ce8145a-8912-4f7a-a421-6e2138844d1f">
+<img width="592" alt="myshop 백엔드" src="https://github.com/rla-wjdqls/myshop/assets/152236710/d379492b-8b48-4104-a1c0-6e738e762b25">
+<img width="454" alt="스크린샷 2024-07-10 오전 11 33 49" src="https://github.com/rla-wjdqls/myshop/assets/152236710/bd9b1fc4-e9ff-4737-af38-b75a82ffc4bb">
+<img width="165" alt="스크린샷 2024-07-10 오전 11 45 22" src="https://github.com/rla-wjdqls/myshop/assets/152236710/63484848-6502-4702-98e9-c967bb232bff">
+<img width="169" alt="스크린샷 2024-07-10 오전 11 39 11" src="https://github.com/rla-wjdqls/myshop/assets/152236710/be990cf9-7f97-4cd4-aec6-7e10cf2ff4d5">
 
 ![프론트엔드기술스택](https://user-images.githubusercontent.com/80666066/198928140-3b6a081e-f3e6-401e-b58f-568792f67847.png)
 
