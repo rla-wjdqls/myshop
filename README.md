@@ -5,11 +5,11 @@
 # 소개
   <br>
   <strong>myshop</strong>은 쇼핑몰 홈페이지 입니다
-  <br>
+  <br> <br>
   
-  - 상품을 등록하고 구매 할 수 있습니다
-  - 상품에 대한 후기를 남길 수 있습니다
-  - 로그인, 회원가입, 아이디/비밀번호 찾기 할 수 있습니다
+  상품을 등록하고 구매 할 수 있습니다
+  상품에 대한 후기를 남길 수 있습니다
+  로그인, 회원가입, 아이디/비밀번호 찾기 할 수 있습니다
   <br><br>
 </div>
 
@@ -17,7 +17,7 @@
 <img width="454" alt="스크린샷 2024-07-10 오전 11 33 49" src="https://github.com/rla-wjdqls/myshop/assets/152236710/bd9b1fc4-e9ff-4737-af38-b75a82ffc4bb">
 
 
-## ⚡️ 백엔드 기술 스택 
+## ✨ 백엔드 기술 스택 
 <img width="592" alt="myshop 백엔드" src="https://github.com/rla-wjdqls/myshop/assets/152236710/d379492b-8b48-4104-a1c0-6e738e762b25">
 
 ## ⚡️ 서버
