@@ -1,3 +1,5 @@
+<!--
+
 <div align=center>
 <img width="500" alt="스크린샷 2024-07-10 오전 11 56 23" src="https://github.com/rla-wjdqls/myshop/assets/152236710/94062653-f5e9-44de-96ab-176a3fcba68c">
   <br>
@@ -56,7 +58,7 @@
 
 
 
-
+-->
 
 
 
